@@ -1,0 +1,14 @@
+<% provide(:title, "トレーニングの編集") %>
+<h2 class="trainings__title">トレーニングの編集</h2>
+<%= form_with model: @training, url: training_path, method: :patch, local: true, class: 'trainings__form' do |f| %>
+  <div class="trainings__form-item">
+    <%= f.label :title do %>
+      タイトル<span class="-required">*</span>
+    <% end %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="trainings__form-item">
+    （未定）カテゴリー
+  </div>
+  <%= f.submit %>
+<% end %>

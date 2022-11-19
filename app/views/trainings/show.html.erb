@@ -1,0 +1,15 @@
+<% provide(:title, "個別トレーニングページ") %>
+<h2 class="trainings__title"><%= @training.title %></h2>
+<div class="trainings__list">
+  <h2 class="trainings__title">目次</h2>
+  <ol>
+    <% @training.chapters.each do |c| %>
+      <li>
+        <%= link_to c.chapter_title, training_chapter_path(@training, c) %>
+        全ての問題数 ▶︎ <%= c.questions.size %> | userの回答数 ▶︎ <%= c.questions.current_user_answered(current_user.id).size if user_signed_in? %>
+      </li>
+    <% end %>
+  </ol>
+</div>
+<%= link_to "このトレーニング情報を編集する", edit_training_path(@training), class: 'link-btn' %>
+<%= link_to "このトレーニングのチャプターを作成する", new_training_chapter_path(@training), class: 'link-btn' %>

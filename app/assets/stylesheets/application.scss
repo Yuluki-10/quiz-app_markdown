@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
+
+@import 'rouge';
+
+body{
+  font-size: 1.2rem;
+
+}
+
+div.highlight{
+  width: 80%;
+  margin-inline: auto;
+}
+
+pre.highlight {
+  background-color: #364549; //コードの背景色
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.q-container{
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+main {
+  background-color: #eee;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  background-color: #3498db;
+  cursor: pointer;
+  padding: 16px 16px 16px 32px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  &:hover{
+    opacity: 0.8;
+  }
+  &::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    content: "\f35d";
+    color: #FFD464;
+  }
+}
+
+span.-required{
+  color: red;
+  margin-left: 5px;
+}
+
+/* エラーメッセージありの場合の設定 */
+.field_with_errors{
+  display: contents;
+}
