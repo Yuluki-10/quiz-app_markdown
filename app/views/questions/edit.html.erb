@@ -10,7 +10,7 @@
   </div>
   <div class="questions__form-item">
     <%= f.label :content, "設問内容" %>
-    <%= f.rich_text_area :content %>
+    <%= f.text_area :content, rows: "20" %>
   </div>
   <%= f.fields_for :choices do |c| %>
     <div class="questions__form-item">

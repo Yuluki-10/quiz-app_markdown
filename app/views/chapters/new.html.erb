@@ -12,16 +12,12 @@
     <%= f.text_field :chapter_title %>
   </div>
   <div class="trainings__form-item">
-    <%= f.label :url, "動画URL" %>
-    <%= f.url_field :url %>
-  </div>
-  <div class="trainings__form-item">
     <%= f.label :chapter_num, "章番号" %>
     <%= f.select :chapter_num, [*1..20], { include_blank: '--'} %>
   </div>
   <div class="trainings__form-item">
     <%= f.label :content, "トレーニング内容" %>
-    <%= f.rich_text_area :content %>
+    <%= f.text_area :content, rows: "20" %>
   </div>
     <%= f.submit %>
 <% end %>

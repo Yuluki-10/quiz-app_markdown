@@ -9,7 +9,7 @@ class Question < ApplicationRecord
   validates :number, presence: true
 
   # 問題文をAction Textで扱えるようにする
-  has_rich_text :content
+  # has_rich_text :content（2022/11/19：markdownに再切り替えのためコメントアウト）
 
   # scope機能。現在のユーザーが回答済みかフラグを立てれるか？
   scope :current_user_answered, ->(userid) {

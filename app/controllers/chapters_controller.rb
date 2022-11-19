@@ -57,6 +57,6 @@ class ChaptersController < ApplicationController
 
   private
   def chapter_params
-    params.require(:chapter).permit(:training_id, :chapter_title, :url, :chapter_num, :content)
+    params.require(:chapter).permit(:training_id, :chapter_title, :chapter_num, :content)
   end
 end
