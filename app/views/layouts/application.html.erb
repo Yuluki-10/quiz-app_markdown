@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header class="q-container">
+    <header class="">
       <div class="header__left">
         <%= link_to "前のページ戻る", :back %>
         <%= link_to "トレーニング一覧", root_path %>
@@ -28,7 +28,6 @@
       </div>
     </header>
 
-    <main class="q-container">
       <!-- メッセージの表示 -->
       <% if notice %>
         <%= simple_format(notice) %>
@@ -39,6 +38,6 @@
       <% end %>
 
       <%= yield %>
-    </main>
+
   </body>
 </html>

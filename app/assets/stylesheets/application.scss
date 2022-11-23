@@ -21,23 +21,10 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
 
-@import 'rouge';
+// require_treeで読み込めている。参考 ▶︎ （https://ja.stackoverflow.com/questions/82863/rails6%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88css%E3%81%AA%E3%81%A9%E3%81%8C%EF%BC%92%E9%87%8D%E3%81%AB%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BE%E3%82%8C%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86）
+// @import 'reset';
+// @import 'rouge';
 
-body{
-  font-size: 1.2rem;
-
-}
-
-div.highlight{
-  width: 80%;
-  margin-inline: auto;
-}
-
-pre.highlight {
-  background-color: #364549; //コードの背景色
-  overflow-x: scroll;
-  padding: 20px;
-}
 
 .q-container{
   max-width: 1200px;
@@ -52,33 +39,30 @@ header {
   height: 60px;
 }
 
-main {
-  background-color: #eee;
-}
 
-a {
-  position: relative;
-  display: inline-block;
-  color: #fff;
-  background-color: #3498db;
-  cursor: pointer;
-  padding: 16px 16px 16px 32px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 700;
-  &:hover{
-    opacity: 0.8;
-  }
-  &::before{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    content: "\f35d";
-    color: #FFD464;
-  }
-}
+// a {
+//   position: relative;
+//   display: inline-block;
+//   color: #fff;
+//   background-color: #3498db;
+//   cursor: pointer;
+//   padding: 16px 16px 16px 32px;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   font-weight: 700;
+//   &:hover{
+//     opacity: 0.8;
+//   }
+//   &::before{
+//     font-family: "Font Awesome 6 Free";
+//     font-weight: 900;
+//     position: absolute;
+//     top: 20px;
+//     left: 10px;
+//     content: "\f35d";
+//     color: #FFD464;
+//   }
+// }
 
 span.-required{
   color: red;
