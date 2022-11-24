@@ -3,13 +3,13 @@
 ## 目次
 
 1. [Adobe Premire Pro](#toc1)
-2. [見出し 2](#toc2)
-3. [見出し 3](#toc3)
+2. [見出し2](#toc2)
+3. [見出し3](#toc3)
 4. [練習問題](#quiz)
 
 ## <a id="toc1"></a> 1. Adobe Premire Pro
 
-テキストの装飾。**太字（\*\*囲う\*\*）**。_em 強調（\*囲う\*）はこのようにハイライトにした_。**_太字+ハイライト（\*\*\*囲う\*\*\*）_**。
+テキストの装飾。**太字（\*\*囲う\*\*）**。*em強調（\*囲う\*）はこのようにハイライトにした*。***太字+ハイライト（\*\*\*囲う\*\*\*）***。
 
 ---
 
@@ -24,7 +24,7 @@
   <a href="" class="link-btn">デザインリンクボタン ▶︎ </a>
 </div>
 
-## <a id="toc2"></a> 2. 見出し 2
+## <a id="toc2"></a> 2. 見出し2
 
 ### クォートブロック
 
@@ -37,7 +37,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_QUNSiBu4PY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a id="toc3"></a> 見出し 3
+## <a id="toc3"></a> 見出し3
 
 ### コード
 

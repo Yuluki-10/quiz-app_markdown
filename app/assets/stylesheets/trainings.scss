@@ -42,7 +42,20 @@ h2.trainings__title {
   }
   &-item {
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
+    select {
+      cursor: pointer;
+      border: 1px solid #000;
+      -webkit-appearance: none;
+      appearance: auto;
+    }
+    textarea {
+      padding: 20px 5px;
+      width: 80%;
+      border: 1px solid #000;
+      -webkit-appearance: none;
+      appearance: auto;
+    }
     label {
       display: inline-block;
       width: 150px;
