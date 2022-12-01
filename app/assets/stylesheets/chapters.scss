@@ -32,7 +32,7 @@ aside.sidebar {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* container
+/* container（bootstrap対策に、Comolyアプリのほうでは、.main-content(正確にはmarkdown__main-content)下に移動⬇︎）
 --------------------------------- */
 .container {
   padding: 20px 35px;
