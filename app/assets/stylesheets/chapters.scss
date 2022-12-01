@@ -139,7 +139,7 @@ aside.sidebar {
       font-weight: 900;
       &::before {
         content: "";
-        background-image: image-url('light.png');
+        background-image: image-url("light.png");
         display: inline-block;
         width: 30px;
         height: 30px;
